@@ -1,0 +1,49 @@
+{
+  "name": "gl-displace-test",
+  "version": "1.0.0",
+  "description": "testing displacement",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "6to5ify": "^3.1.2",
+    "baboon-image-uri": "^1.0.1",
+    "bluebird": "^2.6.2",
+    "canvas-fit": "^1.2.0",
+    "domready": "^1.0.7",
+    "gl-basic-shader": "^1.2.2",
+    "gl-mat4": "^1.0.1",
+    "gl-post": "^1.0.1",
+    "gl-sprite-batch": "^3.1.0",
+    "gl-texture2d": "^2.0.8",
+    "glsl-random": "0.0.4",
+    "glslify": "^1.6.0",
+    "img": "^1.0.0",
+    "lerp": "^1.0.0",
+    "touch-position": "^1.0.3",
+    "weak-map": "^1.0.5",
+    "webgl-context": "^2.0.0"
+  },
+  "devDependencies": {
+    "canvas-testbed": "^1.0.3",
+    "tape": "^3.0.3"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "browserify test.js -t 6to5ify -t glslify | uglifyjs > bundle.js",
+    "start": "beefy test.js -- -t 6to5ify -t glslify"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/gl-displace-test.git"
+  },
+  "homepage": "https://github.com/mattdesl/gl-displace-test",
+  "bugs": {
+    "url": "https://github.com/mattdesl/gl-displace-test/issues"
+  }
+}
